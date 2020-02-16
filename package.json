@@ -1,0 +1,30 @@
+{
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch main.js --exec electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.linman.app",
+    "win": {
+      "target": ["nsis", "zip"]
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.0",
+    "electron-builder": "^22.3.2",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "electron-store": "^5.1.0",
+    "uuid": "^3.4.0",
+    "@fortawesome/fontawesome-free": "^5.12.1"
+  }
+}
